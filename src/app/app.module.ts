@@ -15,6 +15,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
+      { path: 'products/:productId',component: ProductDetailsComponent}
     ])
   ],
   declarations: [
@@ -27,10 +28,3 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
-
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/
