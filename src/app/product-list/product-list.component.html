@@ -12,9 +12,9 @@
 		Description: {{ product.description }}
 	</p>
 
-	<button (click)="share()">
-    Share
-  </button>
+	<p *ngIf="product.Id">
+		Id: {{ product.Id }}
+	</p>
 
 	<app-products-alerts [product]="product">
 		(notify)="onNotify()"
