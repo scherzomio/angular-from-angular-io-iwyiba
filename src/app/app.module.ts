@@ -1,22 +1,22 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
-import { ReactiveFormsModule } from '@angular/forms';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
+import { RouterModule } from "@angular/router";
+import { ReactiveFormsModule } from "@angular/forms";
 
-import { AppComponent } from './app.component';
-import { TopBarComponent } from './top-bar/top-bar.component';
-import { ProductListComponent } from './product-list/product-list.component';
-import { ProductsAlertsComponent } from './products-alerts/products-alerts.component';
-import { ProductDetailsComponent } from './product-details/product-details.component';
-import { CartService } from './cart.service';
+import { AppComponent } from "./app.component";
+import { TopBarComponent } from "./top-bar/top-bar.component";
+import { ProductListComponent } from "./product-list/product-list.component";
+import { ProductsAlertsComponent } from "./products-alerts/products-alerts.component";
+import { ProductDetailsComponent } from "./product-details/product-details.component";
+import { CartService } from "./cart.service";
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
-      { path: 'products/:productId',component: ProductDetailsComponent}
+      { path: "", component: ProductListComponent },
+      { path: "products/:productId", component: ProductDetailsComponent }
     ])
   ],
   declarations: [
@@ -26,7 +26,7 @@ import { CartService } from './cart.service';
     ProductsAlertsComponent,
     ProductDetailsComponent
   ],
-  bootstrap: [ AppComponent ],
+  bootstrap: [AppComponent],
   providers: [CartService]
 })
-export class AppModule { }
+export class AppModule {}
