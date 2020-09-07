@@ -12,8 +12,8 @@
 		Description: {{ product.description }}
 	</p>
 
-	<p *ngIf="product.Id">
-		Id: {{ product.Id }}
+	<p *ngIf="product.price">
+		Price: {{ product.price }}
 	</p>
 
 	<app-products-alerts [product]="product">
